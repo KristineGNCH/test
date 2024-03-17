@@ -1,0 +1,29 @@
+body {
+	font-family: "Arial", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: baseline;
+}
+
+.container {
+	margin: 15px;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+}
+
+.insert-info {
+	border: solid 1px #0000;
+	color: #0f5132;
+}
+
+.insert-info:nth-child(n+1) {
+	padding-top: 15px;
+}
+
+select:required:invalid::after {
+	content: ' *';
+	color: red;
+}
